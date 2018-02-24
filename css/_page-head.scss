@@ -2,19 +2,35 @@
     #PAGE HEADER STYLES
 \*------------------------------------*/
 
-h2.title{
+h2.title {
+
 	position:relative;
 	width:280px;
+	height:100px;
 	margin:60px auto 30px;
-	a{
+
+	a {
+
 		display:block;
 		position:relative;
 		height:inherit;
 		width: 220px;
 		margin:0 auto;
 		
-		background-image:url(../img/logo.svg);
+		background-image:url(../img/logo-placeholder.png);
 		background-repeat:no-repeat;
 		background-size:contain;
+
 	}
+
+}
+
+
+header.main {
+
+	i {
+		font-size:25px;
+		margin-right:8px;
+	}
+
 }

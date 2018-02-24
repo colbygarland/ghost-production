@@ -2,16 +2,16 @@
     #SCSS FONT VARIABLES
 \*------------------------------------*/
 
-$font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-stack: "Roboto", Helvetica, Arial, sans-serif;
 
 /*------------------------------------*\
     #SCSS COLOUR VARIABLES
 \*------------------------------------*/
 
-$text-color: #000;
-$primary: #33308e;
-$secondary: #6cb03f;
-$tertiary: #ffcf00;
+$text-color: #777;
+$primary: #ffc811;
+$secondary: #333;
+$tertiary: #fff;
 
 $navacolor: #FFF;
 $navahover: #FFF;
@@ -54,4 +54,16 @@ $navabghover: $primary;
 }
 .row {
   @include flexbox();
+}
+
+.content {
+
+  padding-top:60px;
+  padding-bottom:60px;
+
+  @include media-breakpoint-up(md){
+    padding-top:100px;
+    padding-bottom:100px;
+  }
+
 }

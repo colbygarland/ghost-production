@@ -1,0 +1,39 @@
+.slider {
+
+	.slide {
+
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position:center;
+		position:relative;
+		min-height:100vh;
+		@include flexbox();
+		justify-content: center;
+		align-items:center;
+		padding-top:20px;
+		padding-bottom:20px;
+
+		&:before {
+			content:'';
+			background:rgba(0,0,0,0.5);
+			height:100%;
+			width:100%;
+			top:0;
+			left:0;
+			position:absolute;
+			display:block;
+		}
+
+		.text-box {
+
+			color:#fff;
+
+			h1, h2, h3, h4, h5, h6 {
+				color:#fff;
+			}
+
+		}
+
+	}
+
+}

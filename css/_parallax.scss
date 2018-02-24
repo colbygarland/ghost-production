@@ -1,0 +1,21 @@
+.parallax-bg {
+
+	position: relative;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	&:before {
+
+		content:'';
+		position: absolute;
+		top:0;
+		left:0;
+		height:100%;
+		width:100%;
+		display:block;
+		background:rgba(0,0,0,0.7);
+
+	}
+
+}

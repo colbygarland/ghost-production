@@ -5,6 +5,7 @@
 body {
 	font-family: $font-stack;
 	color:$text-color;
+	font-size:18px;
 }
 ::-moz-selection {
     background: $tertiary;
@@ -31,20 +32,55 @@ a:hover, a:focus, a:active{
 }
 
 article{
-	p{
-		font-size: 14px;
-		line-height: 1.4;
-	}
-	li{ 	
-		font-size: 14px;
-	}
 
 	h1, h2, h3, h4, h5, h6{
 		a{
 			
 		}
 		&:first-child{
-			margin-top:0;
+			//margin-top:0;
 		}
 	}
+}
+
+.primary-color {
+	color:$primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color:#000;
+}
+
+h1, h2 {
+
+	font-size:40px;
+	text-transform: uppercase;
+	font-weight:700;
+	margin-bottom:30px;
+
+}
+
+h3 {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+p {
+	line-height:1.8;
+}
+
+.underline {
+
+	position: relative;
+
+	&:after {
+		content:'';
+		background:$primary;
+		height:2px;
+		width:100px;
+		display:block;
+		margin-top:20px;
+		margin-bottom:30px;
+	}
+
 }
