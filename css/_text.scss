@@ -1,0 +1,50 @@
+/*------------------------------------*\
+    #BASE TEXT STYLES
+\*------------------------------------*/
+
+body {
+	font-family: $font-stack;
+	color:$text-color;
+}
+::-moz-selection {
+    background: $tertiary;
+    text-shadow: none;
+}
+::selection {
+    background: $tertiary;
+    text-shadow: none;
+}
+
+
+
+/*------------------------------------*\
+    #H1-H6, P, LI, A TEXT STYLES
+\*------------------------------------*/
+a{ 
+	color: $text-color; 
+	text-decoration:none; 
+	font-weight:bold;
+}
+a:hover, a:focus, a:active{
+	color: $secondary;
+	text-decoration:underline;
+}
+
+article{
+	p{
+		font-size: 14px;
+		line-height: 1.4;
+	}
+	li{ 	
+		font-size: 14px;
+	}
+
+	h1, h2, h3, h4, h5, h6{
+		a{
+			
+		}
+		&:first-child{
+			margin-top:0;
+		}
+	}
+}

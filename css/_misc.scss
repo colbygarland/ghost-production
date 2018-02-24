@@ -1,0 +1,47 @@
+/*------------------------------------*\
+    #MISCELANEOUS TRICKS & FIXES
+\*------------------------------------*/
+
+/**
+ * Ensure images stay within their container width
+ */
+ 
+img{
+	max-width: 100%;
+	height:auto;
+}
+
+/**
+ * Set Boostrap .container to relative positioning
+ */
+ 
+.container{
+	position:relative;	
+}
+
+/**
+ * Fix iLightbox arrows from disappearing
+ */
+ 
+a.ilightbox-button{ 
+	display:block!important; 
+}
+
+/**
+ * Text image replacement
+ */
+
+.ir{ 
+	display:block;
+	text-indent:100%;
+	white-space: nowrap;
+	overflow:hidden;	
+}
+
+/**
+ * Wordpress - Gravity Forms Fix
+ */
+.gform_body li{
+	margin-left:0;
+	padding-left:0;	
+}

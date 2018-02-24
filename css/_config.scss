@@ -1,0 +1,57 @@
+/*------------------------------------*\
+    #SCSS FONT VARIABLES
+\*------------------------------------*/
+
+$font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/*------------------------------------*\
+    #SCSS COLOUR VARIABLES
+\*------------------------------------*/
+
+$text-color: #000;
+$primary: #33308e;
+$secondary: #6cb03f;
+$tertiary: #ffcf00;
+
+$navacolor: #FFF;
+$navahover: #FFF;
+$navabg: $secondary;
+$navabghover: $primary;
+
+/*------------------------------------*\
+    #SCSS MIXINS
+\*------------------------------------*/
+
+@mixin flexbox(){
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+@mixin clearfix(){
+	&:before,
+	&:after{
+		content: '';
+		display:table;
+	}
+	&:after{
+		clear:both;	
+	}
+}
+
+@mixin break($args...){
+    @if length($args) == 1{
+       @media (min-width: nth($args, 1)) {
+            @content;
+        } 
+    } 
+    @else {
+       @media (min-width: nth($args, 1)) and (max-width: nth($args, 2)) {
+            @content;
+        } 
+    } 
+}
+.row {
+  @include flexbox();
+}

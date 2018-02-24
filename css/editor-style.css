@@ -1,0 +1,10 @@
+.mceContentBody {
+	font: 12px/1.4 Arial, Helvetica, sans-serif!important; /* MATCH THIS TO YOUR PARAGRAPH FONT SIZE AND FAMILY */
+	background-color:#FFF; /* ARTICLE BACKGROUND COLOUR */
+	color:#000; /* PARAGRAPH TEXT COLOUR */
+	width: 685px; /* SET THIS TO YOUR ARTICLE WIDTH */
+	padding-top:5px;
+	padding-bottom:8px;
+}
+/* ADD YOUR ARTICLE STYLES BELOW TO MATCH YOUR WEBSITE - PREFIX EACH RULE WITH .mceContentBody
+H1-H6, A, UL, OL, LI, BLOCKQUOTE, ADDRESS, TABLE, TR, TD */

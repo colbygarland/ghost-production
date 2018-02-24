@@ -1,0 +1,98 @@
+/*------------------------------------*\
+    #ANIMATED MENU ICON SYSTEM
+\*------------------------------------*/
+/* 
+ * BASED ON Example5 from http://codepen.io/pedrocampos/pen/gufrx 
+ */
+
+/* 
+ * SCSS Variables 
+ */
+$rgb: rgba( 0, 0, 0, 1);
+$rgbzero: rgba( 255, 255, 255, 0);
+$size: 20px;
+
+.menubtn {
+	position: relative;
+	display:  inline-block;
+	cursor:pointer;
+	width: $size + 5px;
+	height: $size;
+	margin: 5px;
+	span {
+		margin: 0 auto;
+		position: relative;
+		top: $size / 5px * 2px;
+		width: $size + 5px;
+		height: $size / 5px * 1px;
+		background-color: $rgb;
+		display: block;
+		&:before, &:after {
+			position: absolute;
+			content: '';
+			width: $size + 5px;
+			height: $size / 5px * 1px;
+			background-color: $rgb;
+			display: block;
+		}
+		&:before {
+			margin-top: -$size / 5px * 2px;
+		}
+		&:after {
+			margin-top: $size / 5px * 2px;
+		}
+	}
+
+
+
+	/* --- btn --- */
+
+	strong{
+		color: $rgb;
+		text-transform: uppercase;
+		margin-left: $size + 10px;
+		font-size: $size;
+		line-height: $size;
+		display:inline-block;
+		margin-top: $size / 5px * -1px;
+		opacity:0.2;
+	}
+	/* example 5 */
+	span {
+		-webkit-transition-duration: 0s; transition-duration: 0s;
+		-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+	}
+	
+	 span:before {
+		-webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+		-webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+		-webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+	}
+	
+	span:after {
+		-webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+		-webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+		-webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+	}
+	
+
+}
+#nav-trigger[type=checkbox]:checked ~ .menubtn{
+	strong {
+		opacity:1;	
+	}
+	span {
+		background-color: $rgbzero;
+		-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+	}
+	span:before {
+		margin-top: 0;
+		-webkit-transform: rotate(45deg); transform: rotate(45deg);
+		-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+	}
+	span:after {
+		margin-top: 0;
+		-webkit-transform: rotate(-45deg); transform: rotate(-45deg);
+		-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+	}
+}
