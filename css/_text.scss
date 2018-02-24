@@ -1,7 +1,3 @@
-/*------------------------------------*\
-    #BASE TEXT STYLES
-\*------------------------------------*/
-
 body {
 	font-family: $font-stack;
 	color:$text-color;
@@ -16,31 +12,14 @@ body {
     text-shadow: none;
 }
 
-
-
-/*------------------------------------*\
-    #H1-H6, P, LI, A TEXT STYLES
-\*------------------------------------*/
-a{ 
+a {
 	color: $text-color; 
 	text-decoration:none; 
 	font-weight:bold;
 }
-a:hover, a:focus, a:active{
-	color: $secondary;
-	text-decoration:underline;
-}
-
-article{
-
-	h1, h2, h3, h4, h5, h6{
-		a{
-			
-		}
-		&:first-child{
-			//margin-top:0;
-		}
-	}
+a:hover, a:focus, a:active {
+  color: $secondary;
+  text-decoration: underline;
 }
 
 .primary-color {
@@ -69,7 +48,7 @@ p {
 	line-height:1.8;
 }
 
-.underline {
+.underline, h4 {
 
 	position: relative;
 
@@ -82,5 +61,24 @@ p {
 		margin-top:20px;
 		margin-bottom:30px;
 	}
+
+}
+
+.btn {
+
+  border-radius:0;
+
+}
+
+.btn-primary {
+
+  background:$primary;
+  border-color:$primary;
+
+  &:hover, &:active, &:focus {
+    background:#fff;
+    border-color:#fff;
+    color:$primary;
+  }
 
 }

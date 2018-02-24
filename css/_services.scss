@@ -3,6 +3,44 @@
 
 }
 
+.service {
+
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border:2px solid $primary;
+  padding:50px 30px;
+  color:#fff;
+  margin-bottom:30px;
+  text-align:center;
+
+  .service-title {
+
+    color:#fff;
+    position: relative;
+    font-weight:700;
+    margin-bottom:25px;
+
+  }
+
+  p {
+    position: relative;
+  }
+
+  &:before {
+    content:'';
+    background:rgba(0,0,0,0.7);
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    display:block;
+  }
+
+}
+
 .icon-col {
 
 	color:#ccc;
