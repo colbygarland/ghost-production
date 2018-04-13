@@ -1,14 +1,10 @@
-/*------------------------------------*\
-    #NAVIGATION - SIDE DRAWER MOBILE
-\*------------------------------------*/	
-
 $background: $secondary;
 $fontsize: 14px;
 $menu-width:200px;
 
-/* Navigation Menu - Background */
+
 .mobile-menu {
-  /* critical sizing and position styles */
+
   width: $menu-width;
   height: 100%;
   position: absolute;
@@ -18,8 +14,7 @@ $menu-width:200px;
   left: 0;
   z-index: 0;
   transition:background 0.5s;
-  
-  /* non-critical appearance styles */
+
   list-style: none;
   background: $background;
   margin:0;
@@ -62,21 +57,15 @@ $menu-width:200px;
        padding-left: 1.6em;
        text-transform:capitalize;
        
-       &:before{
-         font-family: 'Glyphicons Regular';
-         content: "\E224"; /* chevron-right */
-          position: relative;
-          top: -1px;
-          display: inline-block;
+    }
 
-          font-style: normal;
-          font-weight: normal;
-          padding-right: 2px;
-          font-size: 10px;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;	
+    &.current_page_item {
+
+      a {
+        background:$navabghover;
+        color:$navahover;
       }
-       
+
     }
     
   }
@@ -84,29 +73,28 @@ $menu-width:200px;
 }
 
 
-/* Site Wrapper - Everything that isn't navigation */
 .site-wrap {
-  /* Critical position and size styles */
+
   min-height: 100%;
   min-width: 100%;
-  background-color: white; /* Needs a background or else the nav will show through */
+  background-color: white;
   position: relative;
   top: 0;
   bottom: 100%;
   left: 0;
-  /*z-index: 1;*/
 
 }
 
-/* Nav Trigger */
+
 .nav-trigger {
-  /* critical styles - hide the checkbox input */
+
   position: absolute;
   clip: rect(0, 0, 0, 0);
+
 }
 
 label[for="nav-trigger"] {
-  /* critical positioning styles */
+
   position: absolute;
   top: 0;
   padding: 10px 0 0 10px;
@@ -114,7 +102,9 @@ label[for="nav-trigger"] {
   margin:0;
   transition: background 1s ease-in;
   z-index:5;
-  &.scroll:before{
+
+  &.scroll:before {
+
 	  content:"";
 	  height: 45px;
 	  background: rgba(0,0,0,0.5);
@@ -123,50 +113,37 @@ label[for="nav-trigger"] {
 	  top:0;
 	  left:0;  
 	  z-index:4;
-  }
-  &.left {
-	  left:0;
-  }
-  &.right {
-	  right:90px;  
+
   }
   
 }
 
-label[for="nav-trigger"].sticky {
-	position:fixed;
-}
-
-
-/* Make the Magic Happen */
 .nav-trigger + label, .site-wrap {
   transition: left 0.2s;
-  
 }
 
 .navigation.opened {
 	left:0;
 }
 
-
 .nav-trigger:checked + label {
+
   height: 100%;
   width: calc(100% - 200px);
   left: 200px;
   background:url(../css/assets/pattern.svg); /*rgba(0,0,0,0.5);*/
   
-  span{
+  span {
 		margin: 0;  
   }
+
 }
 
 .nav-trigger:checked ~ .site-wrap {
   left: 200px;
-/*  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);*/
 }
 
 body {
-	/* Without this, the body has excess horizontal scroll when the menu is open */
   overflow-x: hidden;
 }
 
