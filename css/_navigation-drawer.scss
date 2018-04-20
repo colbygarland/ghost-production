@@ -172,18 +172,15 @@ body {
     
 		list-style:none;
 		transition: all 1s;
-		position:absolute;
-		display:block;
-		top: 60px;
+		display:flex;
 		right:0;
-		height: 58px;
 		z-index:20;
-		background-color:none;
 		padding:0 20px;
+    width:100%;
+    margin-bottom:0;
     
 		>li {
-      
-			float:left;
+
 			width:auto;
 			padding-bottom:8px;	
 			margin-left:15px;
@@ -193,14 +190,18 @@ body {
       
 			a {
         
-				font-size: 16px;
+				font-size: 14px;
 				color:$primary;	
 				padding: 5px 10px 20px;
 				padding-bottom:5px;
-				text-transform:uppercase;
-				
+				text-transform:none;
+				font-weight:normal;
+        color:#fff;
 				background-color:none;
-				border-bottom:1px solid transparent;
+        display:block;
+        height:75px;
+        line-height:75px;
+        transition:0.3s;
         
 			}
       
@@ -209,6 +210,8 @@ body {
 				> a {
           
 					// PUT IN HOVER / ACTIVE PAGE STYLES HERE
+          text-decoration: none;
+          color:$primary;
           
 				}
 				
@@ -243,7 +246,6 @@ body {
         
 				/*background: rgba( 26,25,23, 0.9);*/
 				padding:2px 0;
-				border-bottom:1px solid transparent;
         
 				a {
           

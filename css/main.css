@@ -6799,6 +6799,7 @@ ul.horizontal, ol.horizontal {
   /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   /* NEW, Spec - Firefox, Chrome, Opera */
+  flex-wrap: wrap;
   padding-left: 0;
   margin-left: 0;
   justify-content: center; }
@@ -6808,6 +6809,12 @@ ul.horizontal, ol.horizontal {
 
 .no-list-style {
   list-style: none; }
+
+.secondary-bg {
+  background-color: #333; }
+
+.lighter-text {
+  color: #888; }
 
 /*------------------------------------*\
     #WORDPRESS ALIGNMENT STYLES
@@ -7073,6 +7080,10 @@ h2.title {
   width: 280px;
   height: 200px;
   margin: 10px auto 10px; }
+  @media (min-width: 992px) {
+    h2.title {
+      margin-left: 0;
+      height: 100px; } }
   h2.title a {
     display: block;
     position: relative;
@@ -7083,9 +7094,35 @@ h2.title {
     background-repeat: no-repeat;
     background-size: contain; }
 
-header.main i {
-  font-size: 25px;
-  margin-right: 8px; }
+header.main {
+  position: relative; }
+  header.main .contact-list i {
+    font-size: 25px;
+    margin-right: 8px;
+    position: absolute;
+    top: 3px;
+    left: 0; }
+    @media (min-width: 992px) {
+      header.main .contact-list i {
+        font-size: 16px; } }
+  header.main .contact-list p {
+    position: relative;
+    padding-left: 40px;
+    color: #000; }
+    @media (min-width: 992px) {
+      header.main .contact-list p {
+        margin-bottom: 5px;
+        line-height: 1.3;
+        padding-left: 30px; } }
+  @media (min-width: 992px) {
+    header.main .contact-list {
+      align-items: flex-end;
+      justify-content: flex-end;
+      position: relative;
+      top: 30px; }
+      header.main .contact-list li {
+        margin-left: 10px;
+        margin-right: 10px; } }
 
 /*------------------------------------*\
     #ANIMATED MENU ICON SYSTEM
@@ -7294,16 +7331,13 @@ body {
   .desktop-menu {
     list-style: none;
     transition: all 1s;
-    position: absolute;
-    display: block;
-    top: 60px;
+    display: flex;
     right: 0;
-    height: 58px;
     z-index: 20;
-    background-color: none;
-    padding: 0 20px; }
+    padding: 0 20px;
+    width: 100%;
+    margin-bottom: 0; }
     .desktop-menu > li {
-      float: left;
       width: auto;
       padding-bottom: 8px;
       margin-left: 15px;
@@ -7311,13 +7345,21 @@ body {
       position: relative;
       background-color: none; }
       .desktop-menu > li a {
-        font-size: 16px;
+        font-size: 14px;
         color: #cc423a;
         padding: 5px 10px 20px;
         padding-bottom: 5px;
-        text-transform: uppercase;
+        text-transform: none;
+        font-weight: normal;
+        color: #fff;
         background-color: none;
-        border-bottom: 1px solid transparent; }
+        display: block;
+        height: 75px;
+        line-height: 75px;
+        transition: 0.3s; }
+      .desktop-menu > li:hover > a, .desktop-menu > li:focus > a, .desktop-menu > li:active > a, .desktop-menu > li.current_page_item > a, .desktop-menu > li.current_page_parent > a {
+        text-decoration: none;
+        color: #cc423a; }
       .desktop-menu > li:hover ul, .desktop-menu > li:focus ul, .desktop-menu > li:active ul {
         left: auto;
         display: block; }
@@ -7333,8 +7375,7 @@ body {
         display: none; }
       .desktop-menu > li li {
         /*background: rgba( 26,25,23, 0.9);*/
-        padding: 2px 0;
-        border-bottom: 1px solid transparent; }
+        padding: 2px 0; }
         .desktop-menu > li li a {
           font-size: 12px;
           font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -7380,6 +7421,10 @@ footer {
   align-items: center;
   padding-top: 80px;
   padding-bottom: 80px; }
+  @media (min-width: 992px) {
+    .slider .slide {
+      padding-top: 250px;
+      padding-bottom: 250px; } }
   .slider .slide:before {
     content: '';
     background: rgba(0, 0, 0, 0.35);
@@ -7392,11 +7437,18 @@ footer {
   .slider .slide .text-box {
     color: #fff;
     text-align: center; }
+    @media (min-width: 992px) {
+      .slider .slide .text-box {
+        text-align: left;
+        max-width: 600px; } }
     .slider .slide .text-box h1, .slider .slide .text-box h2, .slider .slide .text-box h3, .slider .slide .text-box h4, .slider .slide .text-box h5, .slider .slide .text-box h6 {
       color: #fff; }
     .slider .slide .text-box h2 {
       font-size: 50px;
       text-transform: none; }
+      @media (min-width: 992px) {
+        .slider .slide .text-box h2 {
+          font-size: 70px; } }
 
 .slick-prev, .slick-next {
   z-index: 1; }

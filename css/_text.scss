@@ -87,6 +87,7 @@ p {
 ul.horizontal, ol.horizontal {
 
   @include flexbox();
+  flex-wrap:wrap;
   padding-left:0;
   margin-left:0;
   justify-content: center;
@@ -100,4 +101,12 @@ ul.horizontal, ol.horizontal {
 
 .no-list-style {
   list-style:none;
+}
+
+.secondary-bg {
+  background-color:$secondary;
+}
+
+.lighter-text {
+  color:#888;
 }
