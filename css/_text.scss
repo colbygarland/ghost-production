@@ -2,6 +2,7 @@ body {
 	font-family: $font-stack;
 	color:$text-color;
 	font-size:18px;
+  background:$bg;
 }
 ::-moz-selection {
     background: $tertiary;
@@ -81,4 +82,22 @@ p {
     color:$primary;
   }
 
+}
+
+ul.horizontal, ol.horizontal {
+
+  @include flexbox();
+  padding-left:0;
+  margin-left:0;
+  justify-content: center;
+
+  li {
+    margin-left:8px;
+    margin-right:8px;
+  }
+
+}
+
+.no-list-style {
+  list-style:none;
 }
