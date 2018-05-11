@@ -9,34 +9,244 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117941593-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-117941593-1');
-    </script>
-
-
   </head>
-  <body> 
+  <body id="top">
+    
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger" onclick aria-label="Toggle Navigation" class="menubtn left"><strong>Menu</strong><span></span></label>
+    
+    <ul class="mobile-menu">
+      <li class="current_page_item"><a href="#top">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    
+    <div class="site-wrap">
+    
+      <header class="main">
 
-    <div class="placeholder">
-      <img src="img/Ghost-Production-logo.png" alt="Ghost Productions Services">
-      <h3>780-814-3182</h3>
-      <h3>780-814-0319</h3>
-      <a href="mailto:ghostoilfield@gmail.com">ghostoilfield@gmail.com</a>
+        <div class="container">
+
+          <div class="row">
+            <div class="col-lg-3">
+              <h2 class="title"><a href="/" class="ir">Ghost Production</a></h2>
+            </div>
+            <div class="col-lg-9">
+              <ul class="horizontal no-list-style contact-list">
+                <li>
+                  <p><i class="fas fa-phone primary-color"></i> 780-814-3182 <br><span class="lighter-text">Chad Frazer</span></p>
+                </li>
+                <li>
+                  <p><i class="fas fa-phone primary-color"></i> 780-814-0319 <br><span class="lighter-text">Steve Garland</span></p>
+                </li>
+                <li>
+                  <p><i class="fas fa-envelope primary-color"></i> <a href="mailto:ghostproduction@gmail.com">ghostproduction@gmail.com</a></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="secondary-bg">
+          <div class="container">
+            <ul class="desktop-menu">
+              <li class="current_page_item"><a href="#top">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+      </header>
+
+      <main>
+
+        <section class="slider">
+
+          <div class="slide" style="background-image:url(img/toyota.jpg)">
+            <div class="text-box container">
+              <h2>Ghost Production <span class="primary-color">Services</span></h2>
+              <p>Innovative thinking, creating superior results. Get Ghost!</p>
+            </div>
+          </div>
+
+          <div class="slide" style="background-image:url(img/scrubber.jpg)">
+            <div class="text-box container">
+              <h2>Oilfield Rentals</h2>
+            </div>
+          </div>
+
+          <div class="slide" style="background-image:url(img/pump-truck.jpg)">
+            <div class="text-box container">
+              <h2>High Pressure Pumping</h2>
+              <p>Mounted on a 1 ton truck, our high pressure pumping truck offers a more cost effective way to pump than the traditional pump truck</p>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="container content" id="about">
+
+          <div class="row">
+
+            <div class="col-md-6">
+              <img src="img/pump-truck.jpg" alt="">
+            </div>
+
+            <div class="col-md-6">
+              <h3>About Ghost <span class="primary-color">Production</span></h3>
+              <p class="underline">Oilfield rentals and sand testing</p>
+              <p>Offering innovative solutions to common oilfield problems, Ghost Production has a variety of services to best fit your company.</p>
+              <p>With years of experience in the oilfield industry, Ghost has a solution to your company's problems. Whether it be rentals, a most cost effective approach to sand sampling, or a move effective and efficient high pressure pumping, Ghost can help you todau.</p>
+              <ul class="check-list">
+                <li>Oilfield rentals</li>
+                <li>Sand testing</li>
+                <li>High Pressure Pumping</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </section>
+
+        <section class="parallax-bg content" style="background-image:url(img/scrubber.jpg)">
+
+          <div class="container">
+            <div class="row">
+
+              <div class="col-lg-4">
+                <div class="icon-col">
+                  <i class="far fa-comments"></i>
+                  <h4>Credible Integrity</h4>
+                  <p>With years of experience, Ghost will do the job right the first time, every time.</p>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="icon-col">
+                  <i class="far fa-lightbulb"></i>
+                  <h4>Innovative Ideas</h4>
+                  <p>Superior results.</p>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="icon-col">
+                  <i class="fas fa-sync"></i>
+                  <h4>Quality Assurance</h4>
+                  <p>You can be assured that Ghost Production will deliver top quality on every job.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+
+        <section class="content services" id="services">
+
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2>Our <span class="primary-color">Services</span></h2>
+                <p>Read about what Ghost can do for you.</p>
+              </div>
+            </div>
+            <div class="row services-container">
+
+              <div class="col-md-6">
+                <div class="service" style="background-image:url(img/pump-truck.jpg)">
+                  <h5 class="service-title">High Pressure Pumping</h5>
+                  <p>Our high pressure pumping truck is a much more cost effective approach to pumping versus traditional pump trucks.</p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="service" style="background-image:url(img/scrubber.jpg)">
+                  <h5 class="service-title">Rentals</h5>
+                  <p>We carry H<sup>2</sup>S scrubbers, and light towers.</p>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="service" style="background-image:url(img/toyota.jpg)">
+                  <h5 class="service-title">Sand Testing</h5>
+                  <p>Our sand testing greatly reduces capital costs as sand separators can be used more effectively; leaving higher sand flow wells with a separator and removing separators from low sand producing wells. Ghost Production Services system can provide accurate measurement of real time sand being produced and can customize testing parameters to allow trending to be established. Samples are measured to the nearest half gram and liquid production is also recorded in litres during testing.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+
+      </main>
+
+               
+       
+       
+      <footer class="main" id="contact">
+        <div class="content">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-lg-4">
+                <h2 class="title footer"><a href="/" class="ir">Ghost Production</a></h2>
+                <p>Offering innovative solutions to common oilfield problems, Ghost Production has a variety of services to best fit your company.</p>
+                <p>Phone: 780-814-3182</p>
+                <p>Phone: 780-814-0319</p>
+                <p>Email: <a href="mailto:ghostoilfield@gmail.com">ghostoilfield@gmail.com</a></p>
+              </div>
+
+              <div class="col-lg-4">
+                <h4>Services</h4>
+                <p>Rentals</p>
+                <p>Portable Sand Sampling</p>
+                <p>High Pressure Pumping</p>
+              </div>
+
+              <div class="col-lg-4">
+                <h4>Contact Us</h4>
+                <form action="" name="contact" netlify>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="Name" placeholder="Name" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="Email" placeholder="Email" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="phone" class="form-control" name="Phone" placeholder="Phone">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="Message" placeholder="Message"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                  </div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <p>&copy; 2018 Ghost Production Oilfield</p>
+          </div>
+        </div>
+      </footer>
+
     </div>
 
+<!-- Font Activation -->    
 
+    <!-- jQuery -->
+    <script src="js/inc/jquery-3.1.1.min.js"></script>
+    <script src="js/inc/slick.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
