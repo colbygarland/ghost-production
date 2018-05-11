@@ -10,13 +10,14 @@ jQuery(window).bind("load", function() {
       adaptiveHeight: true
     });
 
-    $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
+    var distance = $('header .secondary-bg).offset().top,
+        $window = $(window);
 
-      if (scroll >= 500) {
-        $("header .secondary-bg").addClass("fixed");
+    $window.scroll(function() {
+      if ( $window.scrollTop() >= distance ) {
+        $('header .secondary-bg').addClass('fixed');
       } else {
-        $("header .secondary-bg").removeClass("fixed");
+        $('header .secondary-bg').removeClass('fixed');
       }
     });
 

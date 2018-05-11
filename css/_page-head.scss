@@ -35,6 +35,21 @@ header.main {
 
   position: relative;
 
+  @include media-breakpoint-up(lg){
+    .secondary-bg {
+
+      width:100%;
+
+      &.fixed {
+        top:0;
+        left:0;
+        z-index:9999;
+        position: fixed;
+      }
+
+    }
+  }
+
   .contact-list {
 
     i {
@@ -70,19 +85,6 @@ header.main {
       li {
         margin-left:10px;
         margin-right:10px;
-      }
-
-      .secondary-bg {
-
-        width:100%;
-
-        &.fixed {
-          top:0;
-          left:0;
-          z-index:9999;
-          position: fixed;
-        }
-
       }
 
     }

@@ -7096,6 +7096,14 @@ h2.title {
 
 header.main {
   position: relative; }
+  @media (min-width: 992px) {
+    header.main .secondary-bg {
+      width: 100%; }
+      header.main .secondary-bg.fixed {
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        position: fixed; } }
   header.main .contact-list i {
     font-size: 25px;
     margin-right: 8px;
@@ -7122,14 +7130,7 @@ header.main {
       top: 30px; }
       header.main .contact-list li {
         margin-left: 10px;
-        margin-right: 10px; }
-      header.main .contact-list .secondary-bg {
-        width: 100%; }
-        header.main .contact-list .secondary-bg.fixed {
-          top: 0;
-          left: 0;
-          z-index: 9999;
-          position: fixed; } }
+        margin-right: 10px; } }
 
 /*------------------------------------*\
     #ANIMATED MENU ICON SYSTEM
