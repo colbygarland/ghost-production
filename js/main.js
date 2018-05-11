@@ -61,5 +61,9 @@ jQuery(window).bind("load", function() {
           }
         });
 
+    $(document).ready(function(){
+      $('.spinner').fadeOut();
+    });
+
   });
 });
