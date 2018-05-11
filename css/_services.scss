@@ -1,3 +1,13 @@
+.services {
+
+  @include media-breakpoint-up(md){
+    > div {
+      margin-bottom:50px;
+    }
+  }
+
+}
+
 .service {
 
   background-size:cover;
@@ -12,7 +22,7 @@
 
   @include media-breakpoint-up(md){
     height:100%;
-
+    margin-bottom:0;
   }
 
   .service-title {
