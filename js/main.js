@@ -41,7 +41,7 @@ jQuery(window).bind("load", function() {
               // Only prevent default if animation is actually gonna happen
               event.preventDefault();
 
-              $('.nav-trigger').attr('checked',false);
+              $('.nav-trigger').prop('checked',false);
 
               $('html, body').animate({
                 scrollTop: target.offset().top
