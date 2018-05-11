@@ -7449,7 +7449,6 @@ footer {
     text-align: center; }
     @media (min-width: 992px) {
       .slider .slide .text-box {
-        text-align: left;
         max-width: 600px; } }
     .slider .slide .text-box h1, .slider .slide .text-box h2, .slider .slide .text-box h3, .slider .slide .text-box h4, .slider .slide .text-box h5, .slider .slide .text-box h6 {
       color: #fff; }

@@ -34,7 +34,7 @@
       text-align:center;
 
       @include media-breakpoint-up(lg){
-        text-align:left;
+        //text-align:left;
         max-width:600px;
       }
 
