@@ -10,6 +10,7 @@
 }
 
 .spinner:before {
+  content:'';
   background:#fff;
   position: fixed;
   height:100%;
