@@ -10,7 +10,7 @@ jQuery(window).bind("load", function() {
       adaptiveHeight: true
     });
 
-    var distance = $('header .secondary-bg).offset().top,
+    var distance = $('header .secondary-bg').offset().top,
         $window = $(window);
 
     $window.scroll(function() {
