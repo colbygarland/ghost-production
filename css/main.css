@@ -7493,6 +7493,9 @@ footer {
   color: #fff;
   margin-bottom: 30px;
   text-align: center; }
+  @media (min-width: 768px) {
+    .service {
+      height: 100%; } }
   .service .service-title {
     color: #fff;
     position: relative;

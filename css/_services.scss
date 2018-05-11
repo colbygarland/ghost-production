@@ -1,8 +1,3 @@
-.services {
-
-
-}
-
 .service {
 
   background-size:cover;
@@ -14,6 +9,10 @@
   color:#fff;
   margin-bottom:30px;
   text-align:center;
+
+  @include media-breakpoint-up(md){
+    height:100%;
+  }
 
   .service-title {
 
