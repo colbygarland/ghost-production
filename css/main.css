@@ -7122,7 +7122,14 @@ header.main {
       top: 30px; }
       header.main .contact-list li {
         margin-left: 10px;
-        margin-right: 10px; } }
+        margin-right: 10px; }
+      header.main .contact-list .secondary-bg {
+        width: 100%; }
+        header.main .contact-list .secondary-bg.fixed {
+          top: 0;
+          left: 0;
+          z-index: 9999;
+          position: fixed; } }
 
 /*------------------------------------*\
     #ANIMATED MENU ICON SYSTEM
