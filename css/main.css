@@ -7484,7 +7484,7 @@ footer {
     background: rgba(0, 0, 0, 0.7); }
 
 @media (min-width: 768px) {
-  .services > div {
+  .services-container > div {
     margin-bottom: 50px; } }
 
 .service {
